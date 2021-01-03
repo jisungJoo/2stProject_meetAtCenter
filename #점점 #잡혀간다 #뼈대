@@ -28,11 +28,11 @@
 @ 회원가입
 ## 회원 가입 하려면 먼저 db가 있어야 되겟징?
 db는 member / restaurent / cafe / entertainment / complain +@
-.member - id(pk) pw email nickname tel adddress(location) instar checklist taste 
+.member - id(pk) pw email nickname tel adddress(location) instar checklist taste1 taste2 taste3
 .friend - id(pk) friendid(pk)
-.restaurent - num(sequence,pk) name score location features
-.cafe - num(sequence,pk) name score location features
-.entertainment -num(sequence,pk) name score location features
+.restaurent - num(sequence,pk) name score location category
+.cafe - num(sequence,pk) name score location feature1, feature2, feature3
+.entertainment -num(sequence,pk) name score location category
 .complain - id(pk) title content
 ------------------------------------------------ ----------
 - 회원 가입 누르고
