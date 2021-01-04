@@ -1,16 +1,5 @@
 서비스 흐름도
 
-@ 비회원 로그인
-- 사용법 익히고
-- 시작하기 눌러서 시작
-- 카테고리 고르고
-- 위치찍고
-- 장소 띄어주고
-- 추천창 띄어주고
-- 약속알림(비회원이라 필요없나?)
-- 우리 프로그램 어때? 회원가입해봐 우리가 더 좋은 서비스 해줄수 있음 콜?
-- 서비스종료
-
 @ 회원 로그인
 - 시작하기 눌러서 시작
 - 카테고리 고르고
@@ -30,9 +19,9 @@
 db는 member / restaurent / cafe / entertainment / complain +@
 .member - id(pk) pw email nickname tel adddress(location) instar checklist taste1 taste2 taste3
 .friend - id(pk) friendid(pk)
-.restaurent - num(sequence,pk) name score location category
-.cafe - num(sequence,pk) name score location feature1, feature2, feature3
-.entertainment -num(sequence,pk) name score location category
+.restaurent - num(sequence,pk) name naver_score location(Latitude) location(longitude) category
+.cafe - num(sequence,pk) name naver_score location(Latitude) location(longitude) feature1, feature2, feature3
+.entertainment -num(sequence,pk) name naver_score location(Latitude) location(longitude) category
 .complain - id(pk) title content
 ------------------------------------------------ ----------
 - 회원 가입 누르고
